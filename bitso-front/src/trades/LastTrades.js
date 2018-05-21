@@ -44,8 +44,6 @@ export class LastTrades extends Component{
                         </tr>
                     </tbody>
                 </table>
-                
-                table
             </aside>
         );
     }

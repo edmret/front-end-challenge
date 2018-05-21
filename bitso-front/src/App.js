@@ -5,9 +5,11 @@ import {HeaderBitso} from './header/HeaderBitso';
 import {SubheaderBitso} from './header/SubheaderBitso';
 
 import {LastTrades} from './trades/LastTrades';
+import {BuyPosture} from './trades/BuyPosture';
+import {SellPosture} from './trades/SellPosture';
+import {ChartPanel} from './charts/ChartPanel';
 
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
 import './App.scss'; 
 
 //import fonts
@@ -25,17 +27,13 @@ class App extends Component {
         <div className="app-content">
           <LastTrades></LastTrades>
           <main>
-
+              <ChartPanel />
+              <div class="postures">
+                <BuyPosture></BuyPosture>
+                <SellPosture></SellPosture>
+              </div>
           </main>
         </div>
-
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
