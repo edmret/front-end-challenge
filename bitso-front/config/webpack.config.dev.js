@@ -191,6 +191,24 @@ module.exports = {
               cacheDirectory: true,
             },
           },
+          //processing custom fonts
+          {
+            test: /\.(otf)(\?v=\d+\.\d+\.\d+)?$/,
+            use: {
+              loader: "url-loader",
+              options: {
+                // Limit at 50k. Above that it emits separate files
+                limit: 50000,
+          
+                // url-loader sets mimetype if it's passed.
+                // Without this it derives it from the file extension
+                mimetype: "font/opentype",
+          
+                // Output below fonts directory
+                name: "./fonts/[name].[ext]",
+              }
+            },
+          },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // "style" loader turns CSS into JS modules that inject <style> tags.
