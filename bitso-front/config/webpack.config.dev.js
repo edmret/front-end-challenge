@@ -154,6 +154,10 @@ module.exports = {
                 loader: require.resolve('sass-loader'),
                 options: {
                   importLoaders: 1,
+                  includePaths: [
+                    path.join(paths.appNodeModules,'normalize-scss/sass'),
+                    paths.appSrc
+                  ]
                 },
               },
               {
@@ -205,7 +209,7 @@ module.exports = {
                 mimetype: "font/opentype",
           
                 // Output below fonts directory
-                name: "./fonts/[name].[ext]",
+                name: "fonts/[name].[ext]",
               }
             },
           },

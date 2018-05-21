@@ -1,0 +1,82 @@
+@import "colors.scss";  
+
+header{
+    background: $mediumNavy;
+    color: $lightText;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+
+    & > *{
+        order: 0;
+        flex: 1 1 auto;
+        align-self: stretch;
+    }
+
+}
+
+.logo{
+    color: $lightText;
+    font-size: 1rem;
+    min-width: 200px;
+
+    & > a {
+        color: inherit;
+        display: inline-block;
+        text-decoration: none;
+        & > *{
+            vertical-align: middle;
+        }
+    } 
+
+    picture{
+        width: 80px;
+    }
+
+    span{
+        border-left: solid 1px $lightText;
+        display: inline-block;
+        margin-left: 15px;
+        width: 15px;
+        height: 1rem;
+        text-indent: -99999px;
+
+    }
+
+}
+
+.header-info{
+    width: 100%;
+    text-align: right;
+
+    & > *{
+        display: inline-block;
+        text-align: left;
+    }
+
+}
+
+nav {
+    ul{
+        display: block;
+        line-height: 1rem;
+
+        h4{
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+
+        > li{
+            display: inline-block;
+        }
+
+        ul{
+            display: none;
+        }
+    }
+}

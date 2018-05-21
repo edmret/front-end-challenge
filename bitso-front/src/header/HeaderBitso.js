@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 
+import {Logo} from '../icons/Logo';
+import {DropDownArrow} from '../icons/DropDownArrow';
+
+import './HeaderBitso.scss';
+
 export class HeaderBitso extends Component{
     render (){
         return (
             <header>
-                <h1>
-                    <a href="#">Bitso <span>Exchange</span></a>
+                <h1 className="logo">
+                    <a href="#">
+                        <Logo />
+                        <span>Bitso</span> Exchange
+                    </a>
                 </h1>
                 <section className="header-info">
                     <section className="unity-conversion">1BTC = 000.000.00 MXN</section>
@@ -13,7 +21,7 @@ export class HeaderBitso extends Component{
                         
                         <ul>
                             <li>
-                                <h4>Wallet</h4>
+                                <h4>Wallet <DropDownArrow /></h4>
                                 <ul>
                                     <li>wallet 2</li>
                                     <li>wallet 3</li>
@@ -21,7 +29,7 @@ export class HeaderBitso extends Component{
                                 </ul>
                             </li>
                             <li>
-                                <h4>Excange</h4>
+                                <h4>Excange <DropDownArrow /></h4>
                                 <ul>
                                     <li>Excange 2</li>
                                     <li>Excange 3</li>
@@ -29,7 +37,7 @@ export class HeaderBitso extends Component{
                                 </ul>
                             </li>
                             <li>
-                                <h4>Ayuda</h4>
+                                <h4>Ayuda <DropDownArrow /></h4>
                             </li>
                             <li>
                                 
