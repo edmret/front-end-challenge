@@ -9,13 +9,13 @@ export class LastTrades extends Component{
                     <caption>
                         <h2>últimos trades</h2>
                     </caption>
-                    <thead>
+                    <theader>
                         <tr>
                             <th>Hora</th>
                             <th>MXN Precio</th>
                             <th>BTC Monto</th>
                         </tr>
-                    </thead>
+                    </theader>
                     <tbody>
                         <tr>
                             <td>16:10:25</td>

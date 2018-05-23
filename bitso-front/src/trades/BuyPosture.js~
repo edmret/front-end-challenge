@@ -9,7 +9,7 @@ export class BuyPosture extends Component{
                         <h2>Posturas de compra</h2>
                         MXN <span>Bid 319.140.00</span>
                     </caption>
-                    <thead>
+                    <theader>
                         <tr>
                             <th></th>
                             <th>SUM</th>

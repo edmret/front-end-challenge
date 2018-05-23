@@ -9,7 +9,7 @@ export class SellPosture extends Component{
                         <h2>Posturas de venta</h2>
                         <span>274,934.23 Ask</span> MXN
                     </caption>
-                    <thead>
+                    <theader>
                         <tr>
                             <th>MXN Precio</th>
                             <th>MXN Valor</th>
@@ -17,7 +17,7 @@ export class SellPosture extends Component{
                             <th>SUM</th>
                             <th></th>
                         </tr>
-                    </thead>
+                    </theader>
                     <tbody>
                         <tr>
                             <td>319.149.99</td>
